@@ -3,22 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Background remover</title>
+    <title>Image Background Remover</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
       <h1>Background Remover</h1>
-      <div class="upload-area">
+      <div class="upload-area" id="upload-area">
         <p>Drag & Drop or Click to Upload Image</p>
-        <input type="type" id="imageInput" hidden>
+        <input type="file" id="imageInput" accept="image/*" hidden>
       </div>
       <div class="btns">
-        <button class="btn" id="removeBtn">Remove Background</button>
-        <button class="btn" id="resetBtn">Reset</button></div>
-      <dir class="result">
-        <p>No Image Processed yet.</p>
-      </dir>
+        <button class="btn" id="removeBackgroundBtn">Remove Background</button>
+        <button class="btn" id="resetBtn">Reset</button>
+      </div>
+      <div class="result" id="result">
+        <p>No Image Processed Yet.</p>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>
